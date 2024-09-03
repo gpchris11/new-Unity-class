@@ -275,3 +275,49 @@ radian
 	다만,
 	코루틴은 실제로 병렬 처리되는 것은 아니다.
 	코드만 그런 형태를 취한다
+
+	OffMeshLink 컴포넌트	
+	 컴포넌트를 부착하여 만든다. 시작점, 끝점 지정 간ㅇ. 베이크 정보에 포함되지 않는다.
+	
+	NavMeshAgent
+	 미리 베이크된 지형정보를 기반으로 길찾기를 수행, 게임 오브젝트를 이동시킨다
+
+	 NavMeshObstacle
+	 실행중에 작동하는 동적 장애물을 만드는 컴포넌트
+
+	 Carve옵션을 켜야만 작동한다.
+	 Carve Only Stationary On 움직임이 없다고 판단되었을 때 장애물로 인식하도록 연산한다. (실행중 연산이 비교적 작다)
+	 Carve Only Stationary Off 움직이는 동안에도 장애물로 인식하도록 연산하단다. (실행중 연산이 많다)
+
+	NavMeshModifier
+		NavMesh Data 수정(변경)자
+		예) 만약 이동불가 지역을 만드려면 해당지역에 해당하는 게임오브젝트에 NavMeshModifier 컴포넌트를 부착하고 Override Area/AreaType을 Not Walkable로 설정한다.
+
+		Navigation 윈도우의 Area 탭에서 사용자 정의 커스텀 Area도 만들 수 있다 Cost 설정도 가능하다.
+
+
+		BehaviourTree
+
+		행동 트리
+		트리의 구조와 체계를 가져와 임의의 행동을 결정하는 게임 인공지능 이론으로 사용한다.
+
+		게임 인공지능의 주요한 두가지 기법
+		1)FSM Finite State Machine 유한상태기계
+			유한한 상태들의 추상적인 기계
+
+		2) BehaviourTree
+
+
+		
+
+	OOP 객체지향 프로그래밍
+
+		추상화
+
+		은닉화
+
+		상속성
+
+		다형성
+
+	

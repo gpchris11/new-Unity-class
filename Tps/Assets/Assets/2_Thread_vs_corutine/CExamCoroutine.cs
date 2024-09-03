@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-System.Collections.IEnumerator mDoDispatch = null;
 public class CExamCoroutine : MonoBehaviour
 {
 
